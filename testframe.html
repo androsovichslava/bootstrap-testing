@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+                        <div class='embed-container'><iframe src='https://www.youtube.com/embed//sFRrfUt7jc0' frameborder='0'
+                                allowfullscreen></iframe>
+                            <button id="btn">Остановить</button>
+                        </div>
+
+
+                                <script>
+
+                                    let itd_play = document.querySelector('iframe');
+                                    let btn = document.getElementById('btn');
+                                    btn.addEventListener('click', ()=>{
+                                        itd_play.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+                                    })
+
+                                     console.log(btn);
+                                    // itd_play.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+
+                                </script>
+</body>
+</html>
