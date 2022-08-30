@@ -2,7 +2,7 @@
     --color1:#05b1b1;
     --color2:#52339a;
 }
-header, footer, section {
+ section {
     padding: 100px 0;
 }
 header{
@@ -68,7 +68,7 @@ header, footer {
 }
 
 /* О курсе */
-.about, .shedule, .author {
+.about, .shedule, .author, .buy {
     background-color: #eee;
 }
 .about i {
@@ -144,5 +144,11 @@ header, footer {
 }
 
 .reviews {
-    
+
+}
+
+
+/* Футер */
+footer {
+    padding: 30px 0;
 }
